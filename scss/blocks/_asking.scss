@@ -1,0 +1,68 @@
+.asking {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.asking__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: $title-color;
+}
+.asking__text {
+  width: 635px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $text-color;
+  margin-bottom: 0;
+  padding-bottom: 72px;
+}
+.asking__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.asking__item {
+  max-width: 245px;
+  margin-bottom: 32px;
+}
+.asking__item::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@each $image in card, dollor, mehanika, intel {
+  .asking__item-#{$image}::before {
+    background-image: url(../img/#{$image}.png);
+  }
+}
+
+.facilities__heading {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: $title-color;
+}
+.facilities__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: $text-color;
+}

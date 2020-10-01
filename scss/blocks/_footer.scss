@@ -1,0 +1,75 @@
+.easybank-footer {
+  padding: 48px 0;
+  background-color: #2D314D;
+}
+.easybank-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.easybank-footer__link {
+  display: inline-flex;
+}
+.easybank-footer__box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 130px;
+}
+.easybank-footer__social-icons {
+  margin-top: 55px;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.easybank-footer__social-icon:not(:last-child) {
+    margin-right: 13px;
+}
+.social-icon__link-img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.social-icon__link-img path {
+  transition: fill 0.2s ease;
+}
+.social-icon:hover .social-icon__link-img path {
+  fill: #30C88F;
+}
+.easybank-footer__list {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 218px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.easybank-footer__item {
+  width: 160px;
+}
+.footer-item__link {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.234375px;
+  color: $light-color;
+  transition: color 0.3s ease;
+}
+.footer-item__link:hover {
+  color: $link-hover;
+}
+.easybank-footer__button-copyrights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.easybank-footer__copyright {
+  font-size: 15px;
+  line-height: 26px;
+  text-align: left;
+  letter-spacing: -0.234375px;
+  color: $text-color;
+  margin-top: 24px;
+}

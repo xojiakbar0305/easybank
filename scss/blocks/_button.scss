@@ -1,0 +1,28 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  background: none;
+}
+.button-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  padding: 8px 35px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.4;
+    }
+}
